@@ -28,7 +28,7 @@ return type result === 'object' ? result : a;
 
 - 2、如何区分A当前是作为构造器使用还是普通函数调用
 
- > 首先要清楚一点，var a = new A()，此时A中的this指向的是a实例；var a = A()，此时this指向的是window(浏览器中)，因此我们可以根据this是否是A的实例来区分函数的调用方式，从而对进行不同的处理。
+ > 首先要清楚一点，var a = new A()，此时A中的this指向的是a实例；var a = A()，此时this指向的是window(浏览器中)，因此我们可以根据this是否是A的实例来区分函数的调用方式，从而进行不同的处理。
 
  
 解决了上面两个问题，再试着把A函数改写下
